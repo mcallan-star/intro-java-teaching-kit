@@ -19,10 +19,50 @@
     - [9. Customize](#9-customize)
 
 ## 1. Project Structure
-Open the `CS1-Assignment10-12` project in Eclipse. It should match the structure shown in the screenshot.
+Open the `CS1-Assignment10-12` project in Eclipse
+![Screenshot 2025-12-14 191331](screenshots/current_workspace.png)
 
 ## 2. Create the `uniqueGame` folder
-Right-click the project `CS1-Assignment10-12` → `New` → `Folder` → name it `uniqueGame` → `Finish`. The folder must sit beside `src/`, not inside it. Copy the starter `.jpg` files from `crowtherAdventure/` into `uniqueGame/`.
+Right-click the project `CS1-Assignment10-12` → `New` → `Folder` → name it `uniqueGame` → `Finish`. 
+![Screenshot 2025-12-14 191331](screenshots/new_game_folder.png)
+![Screenshot 2025-12-14 191331](screenshots/naming_the_game.png)
+(mine was named madsBigAdventure)
+ The folder must sit at the same level `src/`, not inside it. 
+
+To proceed, your project structure must look like this:
+```text
+CS1-Assignment10/
+├── src/
+│   └── adventure/
+│       ├── AdventureProgram.java
+│       ├── Room.java
+│       └── RoomManager.java (IMPORTANT: there is a new version of this file , see below)
+│
+├── uniqueGame/    <-- your game folder
+
+├── crowtherAdventure/      (prior example)
+├── simpleGame/             (prior example)
+├── AdventureLib.jar
+└── assignDeps.jar
+```
+
+## 2a. Folder not showing?
+Switch to **Project Explorer**: `Window → Show View → Project Explorer`, then repeat step 2 if needed.
+
+## 3. Create the data files
+Right-click `uniqueGame` → `New` → `File` → create `rooms.txt` and `items.txt`. 
+![Screenshot 2025-12-14 191331](screenshots/Screenshot%202025-12-14%20191331.png)
+Add a new file
+![Screenshot 2025-12-14 191404](screenshots/Screenshot%202025-12-14%20191404.png)
+call it rooms.txt. Do the *same exact process* again to create items.txt.  Now, once you did that, go inside the crowtherAdventure folder to get the starter images copied (title, win, lost, etc.) into `uniqueGame/`.
+![Screenshot 2025-12-14 191729](screenshots/Screenshot%202025-12-14%20191729.png)
+The .jpg files are here
+![Screenshot 2025-12-14 191752](screenshots/Screenshot%202025-12-14%20191752.png)
+paste it
+![Screenshot 2025-12-14 191812](screenshots/Screenshot%202025-12-14%20191812.png)
+paste inside your game folder
+![Screenshot 2025-12-14 192351](screenshots/Screenshot%202025-12-14%20192351.png)
+now your structure should look like this, with all of these exact files to start with.
 
 To proceed, your project structure must look like this:
 ```text
@@ -46,24 +86,6 @@ CS1-Assignment10/
 ├── AdventureLib.jar
 └── assignDeps.jar
 ```
-
-## 2a. Folder not showing?
-Switch to **Project Explorer**: `Window → Show View → Project Explorer`, then repeat step 2 if needed.
-
-## 3. Create the data files
-Right-click `uniqueGame` → `New` → `File` → create `rooms.txt` and `items.txt`. 
-![Screenshot 2025-12-14 191331](screenshots/Screenshot%202025-12-14%20191331.png)
-Add a new file
-![Screenshot 2025-12-14 191404](screenshots/Screenshot%202025-12-14%20191404.png)
-call it rooms.txt. Do the *same exact process* again to create items.txt.  Now, once you did that, go inside the crowtherAdventure folder to get the starter images copied (title, win, lost, etc.) into `uniqueGame/`.
-![Screenshot 2025-12-14 191729](screenshots/Screenshot%202025-12-14%20191729.png)
-
-![Screenshot 2025-12-14 191752](screenshots/Screenshot%202025-12-14%20191752.png)
-copy it
-![Screenshot 2025-12-14 191812](screenshots/Screenshot%202025-12-14%20191812.png)
-paste inside your game folder
-![Screenshot 2025-12-14 192351](screenshots/Screenshot%202025-12-14%20192351.png)
-now your structure should look like this, with these exact files to start with.
 
 
 ## 4. Contents of `rooms.txt`
@@ -97,7 +119,7 @@ You fall into a padded room labeled "BONK".
 FORCED/1
 ```
 
-### Rules
+ ### Rules
 * **Room ID** on first line. This is a number
 * **Image filename** on next line (the .jpg)
 * **Description** on next line. NOTE: must be 1 single line 
