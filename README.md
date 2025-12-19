@@ -16,9 +16,9 @@ This repo reflects how core CS1 concepts were taught and reinforced through **sm
 
 ## What This Repo Is Not
 
-- ❌ Not a solution key for active or past assignments  
-- ❌ Not intended to enable academic dishonesty  
-- ❌ Not a replacement for course instruction  
+-  Not a solution key for active or past assignments  
+-  Not intended to enable academic dishonesty  
+-  Not a replacement for course instruction  
 
 All examples are **original, simplified, and instructional**, and are from my employment at SUNY New Paltz as a TR (Teacher of Record) for Prof. Katherine Brainard's CS1 course (Fall 2025).
 Note:  These files were written specifically to pass the Autograder's JUnit tests.  
